@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleAdaptive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="wrapper">
+        <h1>Submit your <span>best</span> designs</h1>
+        <form action="#" class="formTop">
+            <input type="text"
+                name="name"
+                placeholder="First name*"
+                required
+                class="inputs firstColumn">
+            <input type="text"
+                name="surname"
+                placeholder="Last name*"
+                required
+                class="inputs lastColumn">
+            <input type="email"
+                name="email"
+                required
+                placeholder="Email*"
+                class="inputs firstColumn">
+            <input type="text"
+                name="companyname"
+                placeholder="Company name*"
+                required
+                class="inputs lastColumn">
+            <input type="url"
+                required
+                name="url"
+                placeholder="Company website*"
+                class="inputs firstColumn">
+            <select name="package">
+                <option value=""
+                    selected
+                    disabled>
+                    Choose your package
+                </option>
+            </select>
+        </form>
+        <fieldset>
+            <h4>Add your best design</h4>
+            <form action="#" class="formMiddle">
+                <div class="categoryDesign">
+                    <input type="text"
+                        class="projectName"
+                        name="projectName"
+                        required
+                        placeholder="Design project name*">
+                    <select name="designCategory">
+                        <option value=""
+                            selected
+                            disabled
+                            required>
+                            Best design category*
+                        </option>
+                    </select>
+                </div>    
+                <textarea name="description"
+                    cols="30"
+                    rows="10"
+                    placeholder="Project short descripion"></textarea>
+            </form>
+            <div class="line"></div>
+            <form action="#" class="saveadnAdd">
+                <div class="addURL">
+                    <input type="url"
+                    name="url"
+                    placeholder="Add your best design URL">
+                    <button>Add URL</button>
+                </div>
+                <button class="buttSave">Save and add more designs</button>        
+            </form>
+        </fieldset>
+        <form action="#" class="formBot">
+                <div class="TermsOfUse">
+                    <div class="spanx2">
+                        <div class="chekbox">
+                            <input type="checkbox"
+                                name="mailing ">
+                            <span>I'd like to receive occasional insights from DesignRush</span>
+                        </div>
+                        <span>By subbmitting this form, I agree to DesignRush <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>
+                    </div>
+                    <button class="submit desktop">Submit</button>
+                </div>
+            <p>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Servise</a> apply</p>
+            <button class="submit mobile">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,88 @@
+@media screen and (max-width: 1024px) {
+    .formTop{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .formTop .inputs{
+        max-width: 93%;
+        margin-left: 0;
+    }
+    .formTop .lastColumn{
+        margin-right: 0;
+        min-width: 93%;
+    }
+    .formTop select{
+        max-width: 93%;
+        margin-right: 0;
+    }
+    .addURL input{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 768px){
+    .formMiddle{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .formMiddle textarea{
+        margin-right: 0;
+        margin-top: 20px;
+        max-width: 90%;
+    }
+    .categoryDesign{
+        max-width: 90%;
+    }
+    .formMiddle select{
+        max-width: 100%;
+    }
+    .formMiddle input{
+        max-width: 100%;
+    }
+    .line{
+        display: none;
+    }
+    .addURL{
+        margin-top: 20px;
+    }
+    .saveadnAdd{
+        display: flex;
+        flex-direction: column;
+    }
+    .addURL input{
+        margin-right: 0;
+        max-width: 90%;
+    }
+    .addURL button{
+        max-width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .buttSave{
+        max-width: 90%;
+        width: 100%;
+    }
+    .formBot{
+        margin-top: 10px;
+    }
+    .formBot p{
+        padding-bottom: 0;
+    }
+    .submit.mobile{
+        margin: 40px 0;
+        display: block;
+        max-width: 90%;
+        height: 40px;
+        margin-left: 20px;
+        width: 100%;
+        color: white;
+        background-color: #10c401;
+        border: none;
+        border-radius: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .submit.desktop{
+        display: none;
+    }
+}
