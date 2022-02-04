@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.formTop .inputs, .formTop select, fieldset .formMiddle input, fieldset .formMiddle select, fieldset .addURL input, fieldset .addURL button {
+  border-color: rgba(0, 0, 0, 0.2);
+  height: 50px;
+  padding-left: 15px;
+  text-transform: capitalize;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 300;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  text-transform: capitalize;
+  color: #031577;
+  font-size: 600;
+}
+
+h1 span {
+  color: #0ca4ed;
+}
+
+.formTop {
+  max-width: 1200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .formTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.formTop .inputs {
+  max-width: 45%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .formTop .inputs {
+    max-width: 93%;
+    margin-left: 0;
+  }
+}
+
+.formTop .firstColumn {
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .formTop .firstColumn {
+    margin-left: 0;
+    min-width: 93%;
+  }
+}
+
+.formTop .lastColumn {
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .formTop .lastColumn {
+    margin-right: 0;
+    min-width: 93%;
+  }
+}
+
+.formTop input::-webkit-input-placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+.formTop input:-ms-input-placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+.formTop input::-ms-input-placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+.formTop input::placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+.formTop select {
+  max-width: 45%;
+  width: 100%;
+  color: #a6a2b1;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .formTop select {
+    margin-right: 0;
+    min-width: 93%;
+  }
+}
+
+fieldset {
+  max-width: 93%;
+  width: 100%;
+  background-color: #eff7fa;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+fieldset h4 {
+  margin-left: 20px;
+  margin-top: 30px;
+  text-transform: capitalize;
+  color: #91abc6;
+  font-size: 400;
+}
+
+fieldset .formMiddle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .formMiddle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+  }
+}
+
+fieldset .formMiddle input {
+  max-width: 95%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .formMiddle input {
+    max-width: 100%;
+  }
+}
+
+fieldset .formMiddle input::-webkit-input-placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+fieldset .formMiddle input:-ms-input-placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+fieldset .formMiddle input::-ms-input-placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+fieldset .formMiddle input::placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+fieldset .formMiddle select {
+  max-width: 95%;
+  width: 100%;
+  margin-top: 20px;
+  color: #a6a2b1;
+  font-family: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .formMiddle select {
+    max-width: 100%;
+  }
+}
+
+fieldset .formMiddle textarea {
+  max-width: 47%;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  color: #a6a2b1;
+  margin-right: 20px;
+  height: 120px;
+  text-transform: capitalize;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .formMiddle textarea {
+    margin-right: 0;
+    margin-top: 20px;
+    max-width: 90%;
+  }
+}
+
+fieldset .formMiddle .categoryDesign {
+  max-width: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .formMiddle .categoryDesign {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .formMiddle .saveadnAdd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+fieldset .line {
+  width: 96%;
+  margin: 30px auto;
+  height: 2px;
+  background-color: #e1e9ec;
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .addURL {
+    margin-top: 20px;
+  }
+}
+
+fieldset .addURL input {
+  max-width: 84%;
+  width: 100%;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  fieldset .addURL input {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .addURL input {
+    margin-right: 0;
+    max-width: 90%;
+  }
+}
+
+fieldset .addURL input::-webkit-input-placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+fieldset .addURL input:-ms-input-placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+fieldset .addURL input::-ms-input-placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+fieldset .addURL input::placeholder {
+  color: #a6a2b1;
+  font-family: inherit;
+}
+
+fieldset .addURL button {
+  max-width: 10%;
+  width: 100%;
+  background-color: #00acf4;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .addURL button {
+    max-width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+fieldset .buttSave {
+  width: 280px;
+  height: 50px;
+  display: block;
+  margin: 30px auto;
+  color: white;
+  text-transform: capitalize;
+  background-color: #00acf4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  fieldset .buttSave {
+    max-width: 90%;
+    width: 100%;
+  }
+}
+
+.formBot {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 30px;
+  color: #a6a2b1;
+}
+
+@media screen and (max-width: 768px) {
+  .formBot {
+    margin-top: 10px;
+  }
+}
+
+.formBot .TermsOfUse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formBot .TermsOfUse .spanx2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
+}
+
+.formBot .submit.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .formBot .submit.mobile {
+    margin: 40px 0;
+    display: block;
+    max-width: 90%;
+    height: 40px;
+    margin-left: 20px;
+    width: 100%;
+    color: white;
+    background-color: #10c401;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+.formBot .submit.desktop {
+  max-width: 15%;
+  width: 100%;
+  margin-right: 40px;
+  color: white;
+  background-color: #10c401;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .formBot .submit.desktop {
+    display: none;
+  }
+}
+
+.formBot .chekbox {
+  cursor: pointer;
+}
+
+.formBot p {
+  margin-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .formBot p {
+    padding-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
